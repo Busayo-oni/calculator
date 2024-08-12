@@ -83,7 +83,7 @@ button:focus{
     }
     .container{
         width: 70vw;
-        height: 120vh;
+        height: 100vh;
         padding: 10px;
     }
     .output{
