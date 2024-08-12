@@ -1,0 +1,39 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+    <h1>Calculator</h1>
+    <h2 class="output" id="result">0</h2>
+    <input type="number" placeholder="firstvalue" class="firstvalue" id="inputValue1">
+    <input type="number" placeholder="secondvalue" class="secondvalue" id="inputValue2">
+    <div class="button">
+    <button class="add">+</button>
+    <button class="minus">-</button>
+    <button class="divide">/</button>
+    <button class="percentage">%</button>
+    <button class="multiply">*</button>
+    <button onclick="calculateSquareRoot()">(√)</button>
+    <button onclick="calculateExponential()">(e^x)</button>
+    <button onclick="calculateLog()">(log)</button>
+    <button onclick="calculateLn()">(ln)</button>
+    <button onclick="calculateSin()">(sin)</button>
+    <button onclick="calculateCos()">(cos)</button>
+    <button onclick="calculateTan()">(tan)</button>
+    <button onclick="calculateAsin()">(asin)</button>
+    <button onclick="calculateAcos()">(acos)</button>
+    <button onclick="calculateAtan()">(atan)</button>
+</div>
+<div class="equal-en">
+    <button class="equal">=</button>
+</div>
+</div>
+<script src="script.js" defer></script>
+</body>
+</div>
+</html>
+
