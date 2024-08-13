@@ -1,11 +1,11 @@
-let output = document.querySelector(".output");
+var output = document.querySelector(".output");
 var add = document.querySelector(".add");
 var minus = document.querySelector(".minus");
 var divide = document.querySelector(".divide");
 var percentage = document.querySelector(".percentage");
 var multiply = document.querySelector(".multiply");
 var equal = document.querySelector(".equal");
-let sum = 0;
+var sum = 0;
 
 
 
@@ -47,11 +47,11 @@ document.querySelector('.multiply').onclick = function() {
 }
 
 
-// function getInputValues() {
-//     const value1 = parseFloat(document.getElementById('inputValue1').value);
-//     const value2 = parseFloat(document.getElementById('inputValue2').value);
-//     return [value1, value2];
-// }
+function getInputValues() {
+    const value1 = parseFloat(document.getElementById('inputValue1').value);
+    const value2 = parseFloat(document.getElementById('inputValue2').value);
+    sum = [value1, value2];
+}
 
 
 document.querySelector('.equal').onclick = function() {
@@ -62,7 +62,7 @@ document.querySelector('.equal').onclick = function() {
     document.querySelector('.firstvalue').value = '';
     document.querySelector('.secondvalue').value = '';
 
-        // document.getElementById('result').textContent = 'Result: ' + result;
+        document.getElementById('sum').textContent = 'sum: ' + result;
 };
 
 
